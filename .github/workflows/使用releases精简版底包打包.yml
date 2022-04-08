@@ -36,6 +36,7 @@ jobs:
        # KERNEL_REPO_URL: https://github.com/${GITHUB_REPOSITORY}/tree/main/kernel
         KERNEL_REPO_URL: https://github.com/ophub/kernel/tree/main/pub/stable
         KERNEL_VERSION_NAME: 5.17.1
+        OPENWRT_VER: 22.03-SNAPSHOT
 
     - name: Upload OpenWrt Firmware to Release
       uses: ncipollo/release-action@v1
