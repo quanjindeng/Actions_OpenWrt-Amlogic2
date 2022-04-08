@@ -8,8 +8,10 @@ on:
   #  - cron: 0 16 * * *
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 22.03
+  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_BRANCH: master
+  #REPO_URL: https://github.com/Lienol/openwrt
+  #REPO_BRANCH: 22.03
   #REPO_URL: https://github.com/immortalwrt/immortalwrt
   #REPO_BRANCH: openwrt-21.02
 
