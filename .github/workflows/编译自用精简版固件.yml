@@ -11,7 +11,7 @@ env:
   #REPO_URL: https://github.com/openwrt/openwrt
   #REPO_BRANCH: master
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 22.03
+  REPO_BRANCH: 21.02
   #REPO_URL: https://github.com/immortalwrt/immortalwrt
   #REPO_BRANCH: openwrt-21.02
 
@@ -126,7 +126,7 @@ jobs:
        # KERNEL_AUTO_LATEST: false
         KERNEL_REPO_URL: https://github.com/quanjindeng/Actions_OpenWrt-Amlogic/tree/main/kernel
         KERNEL_VERSION_NAME: 5.17.1
-        OPENWRT_VER: 22.03-SNAPSHOT
+        OPENWRT_VER: 21.02-SNAPSHOT
 
     - name: 发布固件
       uses: ncipollo/release-action@v1
