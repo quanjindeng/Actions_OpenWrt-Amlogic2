@@ -34,6 +34,7 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-openvpn-server package/luci-app-openvpn-server
 
+
 # 删除重复包
 
 # rm -rf feeds/luci/applications/luci-app-netdata
@@ -65,3 +66,5 @@ sed -i 's#ARMv8#openwrt_N1#g' package/luci-app-amlogic/luci-app-amlogic/root/etc
 sed -i 's#opt/kernel#kernel#g' package/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
 
 sed -i 's#../../#$(TOPDIR)/feeds/luci/#g' package/luci-app-openvpn-server/Makefile
+rm -rf feeds/luci/applications/luci-app-frpc
+svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frpc feeds/luci/applications/luci-app-frpc
