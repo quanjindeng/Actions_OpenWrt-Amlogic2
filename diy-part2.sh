@@ -68,3 +68,6 @@ sed -i 's#opt/kernel#kernel#g' package/luci-app-amlogic/luci-app-amlogic/root/et
 sed -i 's#../../#$(TOPDIR)/feeds/luci/#g' package/luci-app-openvpn-server/Makefile
 rm -rf feeds/luci/applications/luci-app-frpc
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frpc feeds/luci/applications/luci-app-frpc
+rm -rf feeds/luci/applications/luci-app-upnp
+svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-upnp feeds/luci/applications/luci-app-upnp
+
