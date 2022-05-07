@@ -8,7 +8,7 @@ on:
     - cron: 0 16 * * 4
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config-tiny
