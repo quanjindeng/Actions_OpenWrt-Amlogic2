@@ -48,7 +48,8 @@ rm -rf package/openwrt-packages/luci-app-amlogic
 rm -rf package/openwrt-packages/luci-app-unblockneteasemusic
 rm -rf package/openwrt-packages/luci-app-frpc
 rm -rf package/openwrt-packages/luci-app-frps
-
+rm -rf package/openwrt-packages/luci-app-opkg
+rm -rf package/openwrt-packages/opkg
 
 # 其他调整
 NAME=$"package/luci-app-unblockneteasemusic/root/usr/share/unblockneteasemusic" && mkdir -p $NAME/core
