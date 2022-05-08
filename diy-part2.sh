@@ -52,6 +52,7 @@ svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-turboacc
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frpc feeds/luci/applications/luci-app-frpc
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frps feeds/luci/applications/luci-app-frps
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-upnp feeds/luci/applications/luci-app-upnp
+git clone https://github.com/cnsilvan/luci-app-unblockneteasemusic.git package/unblockneteasemusic-go
 
 
 # 其他调整
