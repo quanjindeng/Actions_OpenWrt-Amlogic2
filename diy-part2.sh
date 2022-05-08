@@ -27,8 +27,6 @@ sed -i 's/invalid users = root/#invalid users = root/g' feeds/packages/net/samba
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf package/openwrt-packages/luci-app-openvpn-server
 rm -rf package/openwrt-packages/openvpn-easy-rsa-whisky
-#rm -rf package/openwrt-packages/luci-app-wrtbwmon
-#rm -rf package/openwrt-packages/wrtbwmon
 rm -rf package/openwrt-packages/luci-app-argon*
 rm -rf package/openwrt-packages/luci-theme-argon*
 rm -rf package/openwrt-packages/luci-app-amlogic
@@ -72,7 +70,7 @@ sed -i 's#ARMv8#openwrt_armvirt#g' package/luci-app-amlogic/luci-app-amlogic/roo
 sed -i 's#opt/kernel#kernel#g' package/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
 
 sed -i 's#../../#$(TOPDIR)/feeds/luci/#g' package/luci-app-openvpn-server/Makefile
-
+sed -i 's#../../#$(TOPDIR)/feeds/luci/#g' package/luci-app-turboacc/Makefile
 sed -i 's#mount -t cifs#mount.cifs#g' package/openwrt-packages/luci-app-cifs-mount/root/etc/init.d/cifs
 
 sed -i 's#<%+cbi/tabmenu%>##g' package/openwrt-packages/luci-app-nginx-manager/luasrc/view/nginx-manager/index.htm
