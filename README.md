@@ -6,7 +6,7 @@
 ## 感谢
 - [官方OpenWrt源码仓库](https://github.com/openwrt/openwrt)
 - [flippy内核与打包脚本](https://github.com/unifreq/openwrt_packit)
-- [kiddin9额外的软件包](https://github.com/kiddin9/openwrt-packages)
+- [kenzok8额外的软件包](https://github.com/kenzok8/small-package)
 - [p3terx云编译教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 - 所有OpenWrt源码贡献者、插件开发者
 
