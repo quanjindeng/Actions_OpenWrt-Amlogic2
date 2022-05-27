@@ -22,21 +22,6 @@ sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/invalid users = root/#invalid users = root/g' feeds/packages/net/samba4/files/smb.conf.template
 
 
-# 删除重复包
-
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf package/openwrt-packages/luci-app-openvpn-server
-rm -rf package/openwrt-packages/openvpn-easy-rsa-whisky
-rm -rf package/openwrt-packages/luci-app-argon*
-rm -rf package/openwrt-packages/luci-theme-argon*
-rm -rf package/openwrt-packages/luci-app-amlogic
-rm -rf package/openwrt-packages/luci-app-unblockneteasemusic
-rm -rf feeds/luci/applications/luci-app-dockerman
-rm -rf feeds/luci/applications/luci-app-frpc
-rm -rf feeds/luci/applications/luci-app-frps
-rm -rf feeds/luci/applications/luci-app-upnp
-
-
 # 拉取软件包
 
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
@@ -53,6 +38,21 @@ svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frpc fee
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-frps feeds/luci/applications/luci-app-frps
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-upnp feeds/luci/applications/luci-app-upnp
 git clone https://github.com/cnsilvan/luci-app-unblockneteasemusic.git package/unblockneteasemusic-go
+
+
+# 删除重复包
+
+rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf package/openwrt-packages/luci-app-openvpn-server
+rm -rf package/openwrt-packages/openvpn-easy-rsa-whisky
+rm -rf package/openwrt-packages/luci-app-argon*
+rm -rf package/openwrt-packages/luci-theme-argon*
+rm -rf package/openwrt-packages/luci-app-amlogic
+rm -rf package/openwrt-packages/luci-app-unblockneteasemusic
+rm -rf feeds/luci/applications/luci-app-dockerman
+rm -rf feeds/luci/applications/luci-app-frpc
+rm -rf feeds/luci/applications/luci-app-frps
+rm -rf feeds/luci/applications/luci-app-upnp
 
 
 # 其他调整
